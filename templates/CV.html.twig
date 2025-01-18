@@ -1,0 +1,139 @@
+{% extends "base.html.twig" %}
+{% block body %}
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Sokhna Gueye</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2, h3 {
+            color: #333;
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .header .photo {
+            flex: 1;
+            max-width: 150px;
+        }
+        .header .photo img {
+            width: 100%;
+            border-radius: 50%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .header .info {
+            flex: 3;
+            text-align: left;
+            margin-left: 20px;
+        }
+        .header .info h1 {
+            margin: 0;
+            font-size: 2em;
+        }
+        .header .info p {
+            margin: 5px 0;
+            color: #777;
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+        .section h2 {
+            border-bottom: 2px solid #007BFF;
+            padding-bottom: 5px;
+            margin-bottom: 10px;
+            color: #007BFF;
+        }
+        .skills span {
+            display: inline-block;
+            background: #007BFF;
+            color: #fff;
+            padding: 5px 10px;
+            margin: 5px;
+            border-radius: 5px;
+        }
+        .contact p {
+            margin: 5px 0;
+        }
+        .footer {
+            text-align: center;
+            color: #777;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="photo">
+                <img src="photo.jpg" alt="Photo de Sokhna Gueye">
+            </div>
+            <div class="info">
+                <h1>Sokhna Gueye</h1>
+                <p>Étudiante en première année en Réseau et Télécommunications IUT Roanne</p>
+                <p>Email : <a href="mailto:gueyendiora2004@gmail.com">gueyendiora2004@gmail.com</a></p>
+                <p>Téléphone : <a href="tel:+22707411549">07 44 11 15 49</a></p>
+                <p>Adresse : 52 Boulevard de Belgique</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Profil</h2>
+            <p>Étudiante en première année en Réseau et Télécommunication à l'IUT de Roanne (2024), passionnée par les technologies de communication et les réseaux informatiques. Rigoureuse, dynamique et bien organisée, je cherche à approfondir mes compétences dans le domaine des réseaux et des télécommunications.</p>
+        </div>
+
+        <div class="section">
+            <h2>Formation</h2>
+            <p><strong>Première année en Réseau et Télécommunication</strong> - IUT Roanne (2024 - Présent)</p>
+            <p><strong>Baccalauréat Scientifique</strong> - Lycée Mame Cheikh Mbaye, 2023</p>
+        </div>
+
+        <div class="section">
+            <h2>Compétences</h2>
+            <h3>Compétences Techniques</h3>
+            <div class="skills">
+                <span>Programmation : Python</span>
+                <span>Langage C</span>
+                <span>Connexions Réseaux</span>
+                <span>Développement Web</span>
+            </div>
+            <h3>Compétences Transversales</h3>
+            <div class="skills">
+                <span>Rigoureuse</span>
+                <span>Dynamique</span>
+                <span>Gestion du Temps</span>
+                <span>Bonne Organisation</span>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Centres d'Intérêt</h2>
+            <p>Lire, Voyager, Sport, Musique</p>
+        </div>
+
+        <div class="footer">
+            <p>&copy; 2025 Sokhna Gueye. Tous droits réservés.</p>
+        </div>
+    </div>
+</body>
+</html>
+{% endblock %}
+
+

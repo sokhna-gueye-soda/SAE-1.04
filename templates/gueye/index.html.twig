@@ -1,0 +1,180 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Bienvenue sur la page d'accueil de Sokhna Gueye{% endblock %}
+
+{% block body %}
+<style>
+    body {
+        font-family: 'Arial', sans-serif;
+        background: linear-gradient(120deg, #3498db, #f39c12);
+        color: white;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+
+    .example-wrapper {
+        margin: 5em auto;
+        max-width: 900px;
+        width: 90%;
+        background: #ffffff;
+        color: #333;
+        padding: 3em;
+        border-radius: 25px;
+        box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        position: relative;
+        animation: fadeInUp 1s ease-out;
+    }
+
+    h1 {
+        font-size: 3.5em;
+        font-weight: bold;
+        color: #f39c12;
+        text-transform: uppercase;
+        margin-bottom: 1.5em;
+        animation: slideIn 1.5s ease-out;
+    }
+
+    .highlight {
+        color: #e74c3c;
+        font-weight: bold;
+        font-size: 1.3em;
+    }
+
+    .intro {
+        font-size: 1.4em;
+        margin-bottom: 2em;
+        line-height: 1.6;
+        animation: fadeIn 2s ease-in-out;
+    }
+
+    .description {
+        font-size: 1.2em;
+        margin-bottom: 2.5em;
+        line-height: 1.8;
+        animation: fadeIn 2.5s ease-in-out;
+    }
+
+    .icon-wrapper {
+        display: flex;
+        justify-content: space-around;
+        margin: 3em 0;
+    }
+
+    .icon {
+        font-size: 3em;
+        transition: transform 0.3s ease, color 0.3s ease;
+    }
+
+    .icon:hover {
+        transform: scale(1.2);
+        color: #2ecc71;
+    }
+
+    a {
+        text-decoration: none;
+        color: #fff;
+        background-color: #e74c3c;
+        padding: 18px 40px;
+        border-radius: 50px;
+        font-size: 1.3em;
+        letter-spacing: 2px;
+        display: inline-block;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+
+    a:hover {
+        background-color: #c0392b;
+        transform: scale(1.05);
+    }
+
+    .call-to-action {
+        background-color: #2ecc71;
+        padding: 3em;
+        border-radius: 15px;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        margin-top: 4em;
+        animation: slideInFromBottom 1.5s ease-out;
+    }
+
+    .call-to-action h2 {
+        font-size: 2.5em;
+        color: white;
+        margin-bottom: 1.2em;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    .call-to-action p {
+        font-size: 1.2em;
+        color: white;
+        margin-bottom: 2em;
+        line-height: 1.6;
+    }
+
+    .cta-button {
+        background-color: #fff;
+        color: #2ecc71;
+        padding: 18px 40px;
+        border-radius: 50px;
+        font-size: 1.3em;
+        transition: background-color 0.3s ease;
+        text-decoration: none;
+    }
+
+    .cta-button:hover {
+        background-color: #ecf0f1;
+    }
+
+    @keyframes fadeIn {
+        0% { opacity: 0; transform: translateY(-50px); }
+        100% { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeInUp {
+        0% { opacity: 0; transform: translateY(50px); }
+        100% { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes slideIn {
+        0% { transform: translateX(-100%); opacity: 0; }
+        100% { transform: translateX(0); opacity: 1; }
+    }
+
+    @keyframes slideInFromBottom {
+        0% { transform: translateY(50px); opacity: 0; }
+        100% { transform: translateY(0); opacity: 1; }
+    }
+</style>
+
+<div class="example-wrapper">
+    <h1>Bonjour, je suis Sokhna Gueye ! 👋</h1>
+    <p class="intro">Je suis une étudiante dynamique et ambitieuse, en première année de Réseaux et Télécommunications à l'IUT de Roanne.</p>
+    
+    <p class="description">
+        Mon objectif ? Devenir un leader dans le domaine des <span class="highlight">réseaux et télécommunications</span>, innover dans les solutions de communication, et transformer la façon dont le monde interagit grâce aux nouvelles technologies.
+    </p>
+    
+    <p>
+        Vous êtes au cœur de ma passion ! Je cherche à repousser les limites du possible, à anticiper les tendances, et à créer des projets qui changeront la donne dans un secteur en perpétuelle évolution.
+    </p>
+
+    <div class="icon-wrapper">
+        <div class="icon">📡</div>
+        <div class="icon">💻</div>
+        <div class="icon">🌐</div>
+    </div>
+</div>
+
+<div class="call-to-action">
+    <h2>En savoir plus sur moi !</h2>
+    <p>Mon parcours, mes expériences et mes projets sont une véritable passion. Cliquez ci-dessous pour découvrir qui je suis et ce que j'aspire à accomplir dans le futur.</p>
+    <a href="/about" class="cta-button">En savoir plus sur moi</a>
+</div>
+
+{% endblock %}
+
+
+
+
