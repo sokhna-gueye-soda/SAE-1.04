@@ -3,59 +3,83 @@
 {% block title %}À propos de moi{% endblock %}
 
 {% block body %}
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        h1, h2 {
+            color: #0056b3;
+        }
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .links {
+            margin-top: 20px;
+            text-align: center;
+        }
+        .links a {
+            color: #0056b3;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 0 15px;
+        }
+        .links a:hover {
+            text-decoration: underline;
+        }
+    </style>
+
     <div class="container">
-        <h1>En savoir plus sur moi</h1>
+        <h1>Qui suis-je ?</h1>
 
-        <!-- Qui suis-je ? -->
+        <!-- Une histoire de connexion et de passion -->
         <section>
-            <h2>Qui suis-je ?</h2>
-            <p>Je suis Sokhna Gueye, une passionnée de technologie, d'innovation et de transformation numérique. Actuellement étudiante en Réseaux et Télécommunications à l'IUT de Roanne, je suis captivée par l’impact que peuvent avoir les technologies de l'information et de la communication dans le monde moderne. Depuis mon enfance, j'ai toujours été fascinée par la manière dont la technologie peut faciliter la vie des gens, connecter des individus à travers le monde et résoudre des problèmes complexes.</p>
-            <p>Mon intérêt pour l'univers des réseaux et des télécommunications m'a naturellement guidée vers des études approfondies dans ce domaine. L’informatique, les systèmes de communication et la gestion de données ne sont pas simplement des sujets d’étude pour moi, mais des passions qui nourrissent chaque aspect de mon parcours académique et professionnel. Pour moi, chaque innovation technologique est une opportunité de repousser les limites et de rendre le monde plus interconnecté.</p>
-            <p>Ma vision est celle d'une société où la technologie est utilisée de manière éthique et responsable, en mettant l'accent sur l’humain et l’environnement. Je crois fermement qu’un ingénieur doit être à la fois un expert en technologie et un acteur du changement social, capable de concevoir des solutions durables et inclusives.</p>
+            <h2>Connexion et Passion</h2>
+            <p>Je suis Sokhna Gueye, étudiante en Réseaux et Télécommunications à l'IUT de Roanne. Depuis mon baccalauréat scientifique, mon intérêt pour les technologies de communication n'a cessé de croître. Aujourd'hui, à l'IUT, je bénéficie d'un excellent encadrement pédagogique, avec des professeurs experts et passionnés par leurs domaines.</p>
         </section>
 
-        <!-- Mon parcours académique et professionnel -->
+        <!-- Mon parcours académique -->
         <section>
-            <h2>Mon parcours académique et professionnel</h2>
-            <p>J'ai commencé mon parcours académique en suivant des études en sciences et technologies, ce qui m’a permis de découvrir l'étendue des possibilités offertes par l'ingénierie informatique. Dès lors, ma passion pour les réseaux et télécommunications s’est intensifiée. Après avoir intégré l'IUT de Roanne, je me suis spécialisée dans ce domaine fascinant, en explorant des sujets tels que la gestion des infrastructures réseau, la cybersécurité et les nouvelles technologies de communication.</p>
-            <p>Au-delà des cours théoriques, mes projets pratiques ont été des occasions d’appliquer mes connaissances tout en me confrontant aux défis réels du secteur. Par exemple, j’ai participé à des projets collaboratifs qui visaient à développer des solutions innovantes pour des entreprises locales, allant de l’optimisation des réseaux informatiques à la mise en place de systèmes de communication plus efficaces.</p>
-            <p>Je me suis également investie dans des stages en entreprise où j'ai pu travailler sur des solutions de réseau de communication dans des contextes réels. Cela m’a permis d’acquérir une expérience précieuse dans la gestion de projets, le travail en équipe et la résolution de problèmes complexes. En dehors de mes études, je suis constamment à la recherche de nouvelles opportunités pour élargir mes connaissances, que ce soit à travers des conférences, des webinaires ou des projets personnels.</p>
-            <p>Une de mes réalisations importantes a été de mener un projet de sécurisation des réseaux dans le cadre d'un stage où j’ai participé à la mise en place d'une infrastructure plus robuste pour une entreprise. Ce projet a non seulement renforcé mes compétences techniques, mais m’a aussi permis de mieux comprendre l’importance de la sécurité dans le monde numérique d’aujourd'hui.</p>
+            <h2>Mon parcours à l'IUT de Roanne</h2>
+            <p>À l'IUT de Roanne, je suis immergée dans un environnement stimulant où chaque projet est une véritable aventure. Le programme est enrichissant, avec des SAE qui m'ont permis de découvrir concrètement les réseaux et la cybersécurité :</p>
+            <ul>
+                <li><strong>SAE 1.01 :</strong> Introduction à l'hygiène informatique et la cybersécurité.</li>
+                <li><strong>SAE 1.02 :</strong> Configuration de réseaux locaux.</li>
+                <li><strong>SAE 1.03 :</strong> Technologies de transmission des opérateurs.</li>
+            </ul>
+            <p>Ces SAE sont une réelle valeur ajoutée à ma formation, offrant un enseignement pratique et théorique de qualité. Elles m'ont permis de consolider mes connaissances et de développer des compétences essentielles dans le domaine des réseaux.</p>
         </section>
 
-        <!-- Mes passions : Voyage et photographie -->
+        <!-- Mes passions -->
         <section>
-            <h2>Mes passions : le voyage et la photographie</h2>
-            <p>Si la technologie occupe une place centrale dans ma vie, mes autres passions, comme le voyage et la photographie, apportent une dimension nouvelle et enrichissante à mon quotidien. Voyager est pour moi une véritable école de vie. Chaque voyage est une opportunité de découvrir de nouveaux horizons, de comprendre d’autres cultures et de vivre des expériences humaines profondément enrichissantes. Ces moments me permettent de me reconnecter avec moi-même, tout en m’apportant une ouverture d’esprit unique.</p>
-            <p>Le voyage, au-delà de la découverte des paysages, est avant tout un moyen de s’immerger dans d’autres modes de pensée, d'autres traditions et d'autres façons de vivre. Chaque destination, qu'elle soit en Europe, en Afrique, en Asie ou en Amérique, m'a appris quelque chose de précieux. J'ai eu l'occasion de rencontrer des personnes inspirantes, de m'immerger dans des cultures fascinantes et de réfléchir sur des enjeux globaux tels que le développement durable, la mondialisation et les défis sociétaux. Le voyage me permet aussi d’enrichir mes connaissances linguistiques et culturelles, et de renforcer mon adaptabilité face à l'inconnu.</p>
-            <p>La photographie est, pour moi, un moyen d'immortaliser ces moments. À travers mon objectif, je capture des instants de vie, des paysages magnifiques, des portraits qui racontent des histoires. La photographie me permet de m’exprimer d’une manière différente et complémentaire à mes études. C’est aussi une forme de créativité qui me permet de prendre du recul par rapport aux aspects plus techniques de ma vie quotidienne, en me concentrant sur l'esthétique et la beauté de l'instant présent. Chaque photo est un témoignage de mon vécu et une manière de partager mes découvertes avec le monde.</p>
-            <p>Au fil des années, mes voyages et mes photographies ont non seulement enrichi ma vision du monde, mais ont également aiguisé mes compétences d’observation, de patience et d’adaptation, des qualités que je considère essentielles, tant dans ma vie professionnelle que personnelle.</p>
+            <h2>Mes passions</h2>
+            <p>En dehors des études, je suis passionnée par la photographie. Capturer des instants de vie et partager mes aventures est un moyen pour moi de m'évader et de m'exprimer créativement.</p>
+            <div class="links">
+                <a href="#">Mes projets photographiques</a>
+                <a href="#">Mes voyages et découvertes</a>
+            </div>
         </section>
 
         <!-- Mes aspirations professionnelles -->
         <section>
-            <h2>Mes aspirations professionnelles</h2>
-            <p>Je me projette dans un avenir où je serai en mesure de contribuer activement à l'évolution du secteur des technologies de l'information et de la communication. Mon objectif à court terme est de continuer à me perfectionner, à travers des stages et des collaborations avec des entreprises de pointe, dans des domaines tels que la gestion des infrastructures réseaux, la cybersécurité et l'innovation technologique. Je souhaite approfondir mes compétences pratiques tout en restant informée des dernières avancées technologiques.</p>
-            <p>À long terme, je me vois occuper un rôle de leader dans le secteur des télécommunications, en dirigeant des projets innovants et en apportant des solutions à des problématiques complexes. Je souhaite travailler sur des projets visant à améliorer la connectivité dans des régions isolées, à optimiser les réseaux pour réduire leur empreinte carbone et à participer à la conception de technologies de communication qui favorisent une meilleure intégration des données et une gestion plus intelligente des ressources.</p>
-            <p>Je suis également passionnée par les enjeux sociaux et environnementaux. C’est pourquoi je m'intéresse de près aux technologies écologiques, telles que les réseaux de communication à faible consommation d'énergie ou les systèmes intelligents qui peuvent améliorer la qualité de vie des citoyens tout en réduisant l'impact environnemental. Mon objectif est de concilier innovation, efficacité et responsabilité sociale dans les projets auxquels je participerai.</p>
-            <p>Je suis convaincue que le secteur des télécommunications a un rôle fondamental à jouer dans la transformation numérique des sociétés et des économies. C'est pourquoi je m'engage à toujours chercher à améliorer et à innover, à apporter des solutions qui répondent aux besoins des utilisateurs tout en respectant les impératifs d'éthique et de développement durable.</p>
+            <h2>Aspirations professionnelles</h2>
+            <p>Je suis actuellement en train de découvrir différentes facettes du domaine des réseaux et des télécommunications. Mon objectif à court terme est de renforcer mes compétences dans ces domaines variés afin de trouver ma spécialisation. Je suis particulièrement intéressée par les défis liés à la cybersécurité et à l'optimisation des réseaux.</p>
         </section>
 
-        <!-- Photos de mes passions -->
+        <!-- Vers de nouveaux horizons -->
         <section>
-            <h2>Quelques photos de mes passions</h2>
-            <div class="photos">
-                <img src="{{ asset('images/voyage.jpg') }}" alt="Photo de voyage" class="image-passion">
-                <img src="{{ asset('images/photo.jpg') }}" alt="Photo de photographie" class="image-passion">
-            </div>
-            <p>Les photos ci-dessus capturent quelques-uns de mes voyages et moments précieux. Chacune de ces images raconte une histoire, une rencontre, un instant qui m’a marqué et qui continue d'influencer ma vision du monde.</p>
-        </section>
-
-        <!-- Conclusion -->
-        <section>
-            <h2>Conclusion</h2>
-            <p>Je suis convaincue que chaque expérience, chaque projet, chaque rencontre contribue à façonner qui nous sommes et où nous allons. C’est dans cet esprit que j’aborde ma carrière, ma vie personnelle et mes aspirations. En tant qu’ingénieure de demain, je veux être une actrice du changement, une pionnière dans l’adoption de solutions innovantes et responsables, et une passionnée de technologie prête à relever les défis de demain.</p>
-            <p>Si vous partagez mes valeurs et que vous êtes intéressé(e) par l’idée de collaborer, d’échanger ou de discuter des projets que je mène, n’hésitez pas à me contacter. J’ai hâte de découvrir de nouvelles perspectives, de travailler avec des personnes partageant la même passion et de continuer à grandir, ensemble.</p>
-        </section>
+            <h2>Rejoignez-moi dans l'aventure</h2>
+            <p>Si vous partagez mon enthousiasme pour la technologie, n'hésitez pas à me contacter. Ensemble, construisons un futur interconnecté.</p>
+        </section>  
     </div>
 {% endblock %}
+

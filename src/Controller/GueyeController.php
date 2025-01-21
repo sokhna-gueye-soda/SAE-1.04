@@ -9,7 +9,7 @@ use Symfony\Component\Routing\Attribute\Route;
 final class GueyeController extends AbstractController
 {
     #[Route('/gueye', name: 'app_gueye')]
-    public function index(): Response
+    public function gueye(): Response
     {
         return $this->render('gueye/index.html.twig', [
             'controller_name' => 'GueyeController',
@@ -17,10 +17,10 @@ final class GueyeController extends AbstractController
     }
 
 
-    #[Route('/home', name: 'app_home')]
-    public function home(): Response
+    #[Route('/index', name: 'app_home')]
+    public function index(): Response
     {
-        return $this->render('gueye/home.html.twig', [
+        return $this->render('gueye/index.html.twig', [
             
         ]);
     }
@@ -52,4 +52,14 @@ final class GueyeController extends AbstractController
         ]);
     }
 
+    #[Route('/hobbies', name: 'app_hobbies')]
+    public function hobbies(): Response
+    {
+        return $this->render('gueye/hobbies.html.twig', [
+           
+        ]);
+    
+    }
+
 }
+    

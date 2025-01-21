@@ -1,4 +1,5 @@
 {% extends "base.html.twig" %}
+
 {% block body %}
 <!DOCTYPE html>
 <html lang="fr">
@@ -48,9 +49,10 @@
             margin: 0;
             font-size: 2em;
         }
-        .header .info p {
+        /* Modification ici : appliquer la couleur noire à tous les paragraphes */
+        p {
             margin: 5px 0;
-            color: #777;
+            color: #000;  /* Texte en noir */
         }
         .section {
             margin-bottom: 20px;
@@ -83,7 +85,8 @@
     <div class="container">
         <div class="header">
             <div class="photo">
-                <img src="photo.jpg" alt="Photo de Sokhna Gueye">
+                <!-- Photo de profil de Sokhna Gueye -->
+                <img src="{{ asset('images/moi.jpg') }}" alt="Photo de Sokhna Gueye">
             </div>
             <div class="info">
                 <h1>Sokhna Gueye</h1>
@@ -112,7 +115,12 @@
                 <span>Programmation : Python</span>
                 <span>Langage C</span>
                 <span>Connexions Réseaux</span>
-                <span>Développement Web</span>
+                <span>Développement Web : HTML, CSS</span>
+                <span>Maîtrise des lois fondamentales de l'électricité (Intervention sur équipements réseaux)</span>
+                <span>Mesure et analyse des signaux</span>
+                <span>Déploiement de supports de transmission</span>
+                <span>Identification des dysfonctionnements du réseau local</span>
+                <span>Installation de postes clients et explication des procédures</span>
             </div>
             <h3>Compétences Transversales</h3>
             <div class="skills">
@@ -135,5 +143,3 @@
 </body>
 </html>
 {% endblock %}
-
-
