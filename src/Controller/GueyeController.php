@@ -52,10 +52,10 @@ final class GueyeController extends AbstractController
         ]);
     }
 
-    #[Route('/hobbies', name: 'app_hobbies')]
-    public function hobbies(): Response
+    #[Route('/loisirs', name: 'app_loisirs')]
+    public function loisirs(): Response
     {
-        return $this->render('gueye/hobbies.html.twig', [
+        return $this->render('gueye/loisirs.html.twig', [
            
         ]);
     
