@@ -1,0 +1,126 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Parcours R.O.M - Réseaux, Opérateurs et Multimédia{% endblock %}
+
+{% block body %}
+<style>
+    .section-content { 
+        display: none; 
+        margin-top: 20px; 
+    }
+    .section-content.active { 
+        display: block; 
+    }
+    nav a {
+        display: inline-block;
+        margin: 10px 15px 0 0;
+        padding: 10px 15px;
+        background-color: #f0f0f0;
+        border-radius: 5px;
+        cursor: pointer;
+        text-decoration: none;
+        color: #007bff;
+        font-weight: bold;
+        border: 2px solid #007bff;
+        background-color: #e0f0ff;
+    }
+    nav a:hover {
+        background-color: #007bff;
+        color: white;
+    }
+    section h2 {
+        color: #007bff;
+    }
+</style>
+
+<div class="container">
+    <h1>Parcours R.O.M - Réseaux, Opérateurs et Multimédia</h1>
+
+    <nav>
+        <a onclick="showSection('mes-debuts')">Mes débuts</a>
+        <a onclick="showSection('pourquoi-rom')">Pourquoi le parcours R.O.M</a>
+        <a onclick="showSection('competences')">📘 Compétences et apprentissages critiques spécifiques</a>
+        <a onclick="showSection('points-forts')">💪 Points forts</a>
+        <a onclick="showSection('amelioration')">🧩 Améliorations</a>
+        <a onclick="showSection('reflexion')">🔍 Analyse réflexive</a>
+    </nav>
+
+    <section id="mes-debuts" class="section-content">
+        <h2>Mes débuts</h2>
+        <p>Étant un étudiant étranger qui vient tout juste d'arriver en France, j'ai eu du mal à me familiariser avec les outils de réseau et même l'ordinateur. Vu qu'au Sénégal on favorise plus la théorie que la pratique, j'avais des difficultés à m'adapter. Du coup je me suis posé beaucoup de questions comme :<br>Pourquoi j'ai choisi cette formation ?<br>Suis-je prêt à relever les défis lancés par cette formation ?</p>
+    </section>
+
+    <section id="pourquoi-rom" class="section-content active">
+        <h2>Pourquoi le parcours R.O.M ?</h2>
+        <p>Au cours de cette année, j’ai progressivement découvert mes affinités avec les réseaux et les systèmes informatiques. C’est ainsi que j’ai pris la décision de choisir le parcours R.O.M l’année prochaine. Ce choix est en parfaite cohérence avec les besoins actuels du monde professionnel, où les compétences en réseaux et télécommunications sont de plus en plus recherchées. Le parcours R.O.M va me permettre de développer des bases solides pour gérer des infrastructures réseaux, assurer leur bon fonctionnement et m’adapter aux innovations dans le domaine.</p>
+    </section>
+
+    <section id="competences" class="section-content">
+        <h2>📘 Compétences et apprentissages critiques spécifiques</h2>
+        <ul>
+            <li><strong>AC11.02 :</strong> Comprendre l’architecture et les fondements des systèmes numériques, les principes du codage de l’information, des communications et de l’Internet.</li>
+            <li><strong>AC11.03 :</strong> Configurer les fonctions de base du réseau local.</li>
+            <li><strong>AC11.04 :</strong> Maîtriser les rôles et les principes fondamentaux des systèmes d’exploitation afin d’interagir avec ceux-ci pour la configuration et l’administration des réseaux et services fournis.</li>
+            <li><strong>AC11.05 :</strong> Savoir identifier les dysfonctionnements du réseau local.</li>
+            <li><strong>AC13.01 :</strong> Utiliser un système informatique et ses outils.</li>
+        </ul>
+    </section>
+
+    <section id="points-forts" class="section-content">
+        <h2>💪 Mes points forts</h2>
+        <ul>
+            <li><strong>Configuration réseau local :</strong> Attribuer une adresse IP à chaque machine, manuellement (statique) ou via DHCP (dynamique). Mettre en place le routage : statique (routes définies manuellement) ou dynamique (protocole RIP) pour permettre la communication entre réseaux.</li>
+            <li><strong>Systèmes d’exploitation et réseau :</strong> Utiliser Linux et Windows pour gérer les interfaces réseau (IP, passerelle), installer des services pour établir des connexions à distance.</li>
+            <li><strong>Analyse des dysfonctionnements du réseau :</strong> Analyser les pannes avec des outils comme ping, traceroute, vérifier la configuration IP, la connectivité.</li>
+            <li><strong>Installation d’un poste client :</strong> Déployer un OS (Linux/Windows), souvent via VMware, configurer le réseau (IP ou DHCP), installer les services essentiels (navigateur, outils réseau) et tester la connectivité.</li>
+        </ul>
+    </section>
+
+    <section id="amelioration" class="section-content">
+        <h2>🧩 Points convergents et plan d’amélioration</h2>
+        <p>Deux compétences fondamentales nécessitent encore d’être renforcées car elles sont primordiales pour réussir dans le parcours R.O.M. Elles constituent les bases essentielles pour comprendre le fonctionnement global d’un système informatique :</p>
+        <ul>
+            <li><strong>AC11.02 : Comprendre l’architecture et les fondements des systèmes numériques :</strong> Cette compétence est indispensable pour comprendre comment les données circulent dans les réseaux et comment les différents composants communiquent entre eux. Elle permet de mieux appréhender les notions de codage de l’information et de fonctionnement d’Internet.
+                <ul>
+                    <li>Je reprends mes TD pour consolider la base théorique.</li>
+                    <li>Je regarde des tutoriels vidéo sur YouTube pour visualiser des applications concrètes de ces systèmes.</li>
+                    <li>Je lis des ouvrages et des articles techniques à la BU pour approfondir mes connaissances en architecture réseau et codage de l'information.</li>
+                </ul>
+            </li>
+            <li><strong>AC13.01 : Utiliser un système informatique et ses outils :</strong> Même si je suis déjà familiarisé avec certains systèmes, cette compétence exige une maîtrise approfondie pour configurer efficacement des environnements réseau. Elle est indispensable pour travailler dans des contextes professionnels où l'efficacité et la rapidité sont attendues.
+                <ul>
+                    <li>Je pratique régulièrement en réalisant des exercices et des projets pratiques sur des plateformes comme VMware ou VirtualBox.</li>
+                    <li>Je suis des tutoriels et des vidéos en ligne pour me perfectionner dans la gestion avancée des systèmes informatiques.</li>
+                    <li>J’applique ces compétences en résolvant des cas pratiques afin de renforcer mes capacités en administration de systèmes et de réseaux.</li>
+                </ul>
+            </li>
+        </ul>
+    </section>
+
+    <section id="reflexion" class="section-content">
+        <h2>🔍 Analyse réflexive</h2>
+        <p>Avant, j'avais beaucoup de mal à comprendre la configuration des réseaux et des systèmes, car je n'avais pas assez de pratique. Grâce aux travaux pratiques (TP) et aux projets de type SAE, j’ai commencé à mieux visualiser les concepts et à les appliquer concrètement. Aujourd’hui, je me sens beaucoup plus à l’aise et confiant dans mes capacités techniques. Cette progression me donne la motivation nécessaire pour m’engager pleinement dans le parcours R.O.M l'année prochaine.</p>
+    </section>
+</div>
+
+<script>
+    function showSection(id) {
+        const sections = document.querySelectorAll('.section-content');
+        sections.forEach(section => {
+            section.classList.remove('active');
+        });
+        document.getElementById(id).classList.add('active');
+    }
+</script>
+
+{% endblock %}
+
+
+
+
+
+
+
+
+
+

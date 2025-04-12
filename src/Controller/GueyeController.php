@@ -61,6 +61,13 @@ final class GueyeController extends AbstractController
     
     }
     
+    #[Route('/le parcours de mon choix', name: 'app_le parcours de mon choix')]
+    public function leparcoursdemonchoix(): Response
+    {
+        return $this->render('gueye/le parcours de mon choix.html.twig', [
+           
+        ]);
     
+    }
 }
     
